@@ -45,12 +45,14 @@
         Row me align items ka flex-start top me aur flex-end bottom me hai aur row-reverse me bhi 
         flex-end bottom me aur flex-start top me rehta hai
 
-                                              Justify-content                                     Align-items        
-                                   flex-start             flex-end                       flex-start          flex-end
-        row                         left                    right                         top                 bottom
-        row-reverse                 right                   left                          top                 bottom
-        column                      top                     bottom                        left                 right
-        column-reverse              bottom                   top                          left                 right -->
+                                              Justify-content                                     Align-items                                Order                                flex-grow                               flex-shrink                                                                                                                  
+                                   flex-start             flex-end                       flex-start          flex-end                         1                                      1                                        2                                                                                                                                   
+        row                         left                    right                         top                 bottom                 left(min) to right(max)                 pura width cover karega                agar width static hai to shrink nahi hoga (maximum aur minimum width me shrink hoga aur agar width percentage me hai to bhi hoga)                                           
+        row-reverse                 right                   left                          top                 bottom                 right(min) to left(max)                 pura width cover karega                agar width static hai to shrink nahi hoga (maximum aur minimum width me shrink hoga aur agar width percentage me hai to bhi hoga)                 
+        column                      top                     bottom                        left                 right                 top(min) to bottom(max)                 pura height cover karega               only vh height aur min-height me hi shrink hoga                                                                  
+        column-reverse              bottom                   top                          left                 right                 bottom(min) to top(max)                 pura height cover karega               only vh height aur min-height me hi shrink hoga                                                               
+    
+    -->
 
 
     </div>
